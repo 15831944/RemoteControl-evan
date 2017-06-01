@@ -1,0 +1,40 @@
+﻿Build started 2017-5-19 14:37:41.
+     1>Project "G:\Project\RemoteControl\RemoteControl\RemoteControl\RemoteControl\RemoteControl.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /GL /D _WINDOWS /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yc"stdafx.h" /Fp"x64\Release\RemoteControl.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc140.pdb" /Gd /TP /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         Automatically linking with BCGCBPRO2510U140.lib
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /GL /D _WINDOWS /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"x64\Release\RemoteControl.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc140.pdb" /Gd /TP /errorReport:prompt IniFile.cpp MainFrm.cpp RemoteControl.cpp RemoteControlDoc.cpp RemoteControlView.cpp
+         IniFile.cpp
+     1>g:\project\remotecontrol\remotecontrol\remotecontrol\remotecontrol\IniFile.h(10): error C2440: 'default argument': cannot convert from 'const char [1]' to 'CString'
+         g:\project\remotecontrol\remotecontrol\remotecontrol\remotecontrol\IniFile.h(10): note: Constructor for class 'ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>>' is declared 'explicit'
+     1>IniFile.cpp(12): error C2664: 'DWORD GetModuleFileNameW(HMODULE,LPWSTR,DWORD)': cannot convert argument 2 from 'char [260]' to 'LPWSTR'
+         IniFile.cpp(12): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>IniFile.cpp(13): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+     1>IniFile.cpp(23): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\string.h(90): note: see declaration of 'strcat'
+     1>IniFile.cpp(44): error C2440: 'default argument': cannot convert from 'const char [1]' to 'CString'
+         IniFile.cpp(44): note: Constructor for class 'ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>>' is declared 'explicit'
+     1>IniFile.cpp(50): error C2572: 'CIniFile::GetInt': redefinition of default argument: parameter 1
+         g:\project\remotecontrol\remotecontrol\remotecontrol\remotecontrol\IniFile.h(11): note: see declaration of 'CIniFile::GetInt'
+     1>IniFile.cpp(54): error C2572: 'CIniFile::GetDWORD': redefinition of default argument: parameter 1
+         g:\project\remotecontrol\remotecontrol\remotecontrol\remotecontrol\IniFile.h(12): note: see declaration of 'CIniFile::GetDWORD'
+     1>IniFile.cpp(57): error C2664: 'void ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>>::Format(UINT,...)': cannot convert argument 1 from 'const char [3]' to 'const wchar_t *'
+         IniFile.cpp(57): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>IniFile.cpp(59): error C2664: 'long atol(const char *)': cannot convert argument 1 from 'TCHAR [256]' to 'const char *'
+         IniFile.cpp(59): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>IniFile.cpp(69): error C2664: 'void ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>>::Format(UINT,...)': cannot convert argument 1 from 'const char [3]' to 'const wchar_t *'
+         IniFile.cpp(69): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>IniFile.cpp(75): error C2664: 'void ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>>::Format(UINT,...)': cannot convert argument 1 from 'const char [3]' to 'const wchar_t *'
+         IniFile.cpp(75): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>IniFile.cpp(81): error C2664: 'void ATL::CStringT<wchar_t,StrTraitMFC_DLL<wchar_t,ATL::ChTraitsCRT<wchar_t>>>::Format(UINT,...)': cannot convert argument 1 from 'const char [3]' to 'const wchar_t *'
+         IniFile.cpp(81): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+         MainFrm.cpp
+         RemoteControl.cpp
+         RemoteControlDoc.cpp
+         RemoteControlView.cpp
+     1>Done Building Project "G:\Project\RemoteControl\RemoteControl\RemoteControl\RemoteControl\RemoteControl.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:03.39
