@@ -26,6 +26,7 @@ void CSettingView::DoDataExchange(CDataExchange* pDX)
 }
 
 BEGIN_MESSAGE_MAP(CSettingView, CFormView)
+	ON_BN_CLICKED(IDC_MFCBUTTON1, &CSettingView::OnBnClickedMfcbutton1)
 END_MESSAGE_MAP()
 
 
@@ -47,3 +48,9 @@ void CSettingView::Dump(CDumpContext& dc) const
 
 
 // CSettingView message handlers
+
+
+void CSettingView::OnBnClickedMfcbutton1()
+{
+	// TODO: 在此添加控件通知处理程序代码
+}
